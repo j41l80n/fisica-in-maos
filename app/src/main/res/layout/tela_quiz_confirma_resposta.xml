@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@color/branco">
+        <Button
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_personalizado_confirma"
+            android:layout_width="110dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="60dp"
+            android:id="@+id/bt_confirma_resposta" />
+        <Button
+            android:background="@drawable/bt_personalizado_cancela"
+            android:layout_width="110dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/bt_cancela_resposta"
+            android:layout_marginBottom="30dp"/>
+</LinearLayout>

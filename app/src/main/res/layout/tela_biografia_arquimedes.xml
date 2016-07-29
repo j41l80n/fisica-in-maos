@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_tela_biografias"
+    android:scrollbars="none" >
+    <LinearLayout
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"
+            android:id="@+id/tela_biografia_arquimedes_iv_01"
+            android:src="@drawable/tela_biografia_arquimedes_iv_01" />
+        <TextView
+            android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_01" />
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/tela_biografia_arquimedes_iv_02"
+            android:src="@drawable/tela_biografia_arquimedes_iv_02"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_02" />
+        <ImageView
+            android:layout_marginBottom="25dp"
+            android:layout_width="290dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:id="@+id/tela_biografia_arquimedes_iv_03"
+            android:src="@drawable/tela_biografia_arquimedes_iv_03"/>
+        <TextView  android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_03" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/tela_biografia_arquimedes_iv_04"
+            android:src="@drawable/tela_biografia_arquimedes_iv_04"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_04" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="300dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/tela_biografia_arquimedes_iv_05"
+            android:src="@drawable/tela_biografia_arquimedes_iv_05"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_05" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tela_biografia_arquimedes_iv_06"
+            android:layout_marginBottom="15dp"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_06" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/tela_biografia_arquimedes_iv_07" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_07" />
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/tela_biografia_arquimedes_iv_08"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_08" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tela_biografia_arquimedes_iv_09"
+            android:layout_marginBottom="25dp"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_arquimedes_tv_09" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tela_biografia_arquimedes_iv_10"
+            android:layout_marginBottom="100dp"/>
+    </LinearLayout>
+</ScrollView>

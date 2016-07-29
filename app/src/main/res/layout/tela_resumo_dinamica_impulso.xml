@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_dinamica_implulso_01"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_ln_17"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_dinamica_implulso_02"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_dinamica_implulso_01"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:text="N.s"
+                    android:textColor="@color/preto"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_dinamica_implulso_03"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_dinamica_implulso_02"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:text="N"
+                    android:textColor="@color/preto"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_dinamica_implulso_04"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_dinamica_implulso_03"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:text="s"
+                    android:textColor="@color/preto"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/branco"
+            android:id="@+id/tv_tela_resumo_dinamica_07_extra_01"/>
+        <TextView
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_dinamica_implulso_05"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0058"
+            android:layout_width="220dp"
+            android:scaleType="fitXY"
+            android:layout_height="160dp" />
+        <TextView android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_dinamica_implulso_06"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0059"
+            android:layout_width="220dp"
+            android:layout_marginBottom="60dp"
+            android:scaleType="fitXY"
+            android:layout_height="130dp" />
+    </LinearLayout>
+</ScrollView>

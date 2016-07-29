@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_vm"
+            android:layout_width="90dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_tela_resumo_cinematica_07_01" >
+        </TextView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textColor="@color/preto"
+                    android:textSize="17sp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_cinematica_07_02" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_cinematica_07_01"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView android:textColor="@color/preto"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text=" m"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textColor="@color/preto"
+                    android:textSize="17sp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_cinematica_07_03"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_cinematica_07_02"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView android:textColor="@color/preto"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text=" s"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textColor="@color/preto"
+                    android:textSize="17sp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_cinematica_07_04"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_cinematica_07_03"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView android:textColor="@color/preto"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text=" m/s"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tv_tela_resumo_cinematica_07_00_extra"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_cinematica_07_05"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_cinematica_07_06"/>
+        <ImageView
+            android:src="@drawable/iv_0014"
+            android:layout_width="270dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_height="80dp" />
+        <ImageView
+            android:layout_width="160dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:src="@drawable/iv_0015" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:ems="4"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_tela_resumo_cinematica_07_extra1"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:ems="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_tela_resumo_cinematica_07_04"
+                android:inputType="numberDecimal" />
+            <TextView android:textColor="@color/preto"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" m/s = "/>
+            <EditText
+                android:ems="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_tela_resumo_cinematica_07_05"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:ems="4"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_tela_resumo_cinematica_07_extra2"
+                android:inputType="numberDecimal" />
+            <TextView android:textColor="@color/preto"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km/h"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

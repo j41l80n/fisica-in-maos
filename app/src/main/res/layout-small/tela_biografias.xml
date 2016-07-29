@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tela_biografias" >
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:background="@drawable/bt_personalizado_arquimedes"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/tela_biografias_bt_fisico_arquimedes"/>
+            <Button
+                android:background="@drawable/bt_personalizado_bernoulli"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tela_biografias_bt_fisico_bernoulli"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/bt_personalizado_blaise_pascal"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/tela_biografias_bt_fisico_blaise_pascal"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/bt_personalizado_galileu_galilei"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/tela_biografias_bt_fisico_galileu_galilei"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/bt_personalizado_isaac_newton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/tela_biografias_bt_fisico_isaac_newton"
+                android:layout_marginBottom="10dp" />
+            <Button
+                android:background="@drawable/bt_personalizado_johannes_kepler"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tela_biografias_bt_fisico_johannes_kepler"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/bt_personalizado_stevin"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tela_biografias_bt_fisico_stevin"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/bt_personalizado_torricelli"
+                android:layout_width="match_parent"
+                android:id="@+id/tela_biografias_bt_fisico_torricelli"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

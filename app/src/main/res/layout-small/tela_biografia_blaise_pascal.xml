@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_tela_biografias"
+    android:scrollbars="none" >
+    <LinearLayout
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"
+            android:id="@+id/tela_biografia_blaise_pascal_iv_01"
+            android:src="@drawable/tela_biografia_blaise_pascal_iv_01" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_blaise_pascal_tv_01" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tela_biografia_blaise_pascal_iv_02"
+            android:src="@drawable/tela_biografia_blaise_pascal_iv_02"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_blaise_pascal_tv_02" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_blaise_pascal_iv_03"
+            android:src="@drawable/tela_biografia_blaise_pascal_iv_03"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_blaise_pascal_tv_03" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_blaise_pascal_iv_04"
+            android:src="@drawable/tela_biografia_blaise_pascal_iv_04"/>
+        <TextView android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tela_biografia_blaise_pascal_tv_04" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_mhs_associacao_molas_01"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0163"
+            android:layout_width="250dp"
+            android:scaleType="fitXY"
+            android:layout_height="150dp" />
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_mhs_associacao_molas_02"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0164"
+            android:layout_width="250dp"
+            android:scaleType="fitXY"
+            android:layout_height="250dp" />
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_mhs_associacao_molas_03"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_mhs_6_1"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_mhs_6_2"
+            android:layout_width="170dp"
+            android:layout_marginBottom="90dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+    </LinearLayout>
+</ScrollView>

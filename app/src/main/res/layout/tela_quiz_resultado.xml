@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rf" >
+    <RelativeLayout
+        android:background="@color/branco"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:textColor="@color/preto"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/tv_tela_quiz_resultado_acertos"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="23dp"
+            android:textColor="@color/preto"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_tela_quiz_resultado_acertos"
+            android:id="@+id/tv_tela_quiz_resultado_erros"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/imv_atm"
+            android:src="@drawable/atomo_com_brilho"
+            android:layout_height="100dp" />
+        <com.facebook.share.widget.ShareButton
+            android:layout_below="@id/imv_atm"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/fb_share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bt_personalizado_terminar"
+            android:id="@+id/bt_tela_quiz_resultado_terminar_jogo"/>
+    </RelativeLayout>
+</LinearLayout>

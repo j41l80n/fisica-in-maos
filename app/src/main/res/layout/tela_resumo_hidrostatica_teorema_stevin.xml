@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrostatica_teorema_stevin_01"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_hds_6"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0133"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_height="240dp" />
+    </LinearLayout>
+</ScrollView>

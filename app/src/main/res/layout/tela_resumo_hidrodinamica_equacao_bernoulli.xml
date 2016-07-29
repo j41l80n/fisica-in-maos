@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_bernoulli_01"/>
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0110"
+            android:layout_width="310dp"
+            android:scaleType="fitXY"
+            android:layout_height="90dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_bernoulli_02"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_hdn_5"
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="5dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iv_hdn_6"
+            android:layout_width="320dp"
+            android:scaleType="fitXY"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iv_hdn_7"
+            android:layout_width="360dp"
+            android:scaleType="fitXY"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iv_hdn_9"
+            android:layout_width="320dp"
+            android:scaleType="fitXY"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_hdn_10"
+            android:layout_width="150dp"
+            android:scaleType="fitXY"
+            android:layout_height="30dp" />
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_bernoulli_03"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0112"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/iv_hdn_8"
+            android:layout_width="300dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp" />
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_bernoulli_04"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0116"
+            android:layout_width="300dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:layout_height="100dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0117"
+            android:layout_width="150dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20dp"
+            android:layout_height="120dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0118"
+            android:layout_width="300dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:layout_height="170dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_bernoulli_05"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0119"
+            android:layout_width="300dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_bernoulli_06"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0120"
+            android:layout_width="120dp"
+            android:layout_marginBottom="100dp"
+            android:scaleType="fitXY"
+            android:layout_height="200dp" />
+    </LinearLayout>
+</ScrollView>

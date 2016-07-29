@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tela_conversor" >
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="GRANDEZA"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tv_grandeza"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/branco"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:singleLine="true"
+        android:padding="3dp"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@+id/tv_grandeza"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/borda_arredondada_tela_conversor"
+        android:popupBackground="@color/cinza"
+        android:id="@+id/sp_tela_conversor_grandeza"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VALOR DE ENTRADA"
+        android:textColor="@color/branco"
+        android:id="@+id/tv_ve"
+        android:textStyle="bold"
+        android:layout_below="@+id/sp_tela_conversor_grandeza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:background="@drawable/borda_arredondada_tela_conversor"
+        android:backgroundTintMode="screen"
+        android:popupBackground="@color/verde"
+        android:padding="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:spinnerMode="dialog"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_ve"
+        android:id="@+id/sp_tela_conversor_valor_entrada">
+    </Spinner>
+    <EditText
+        android:visibility="gone"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@+id/sp_tela_conversor_valor_entrada"
+        android:id="@+id/et_tela_conversor_valor_entrada"
+        android:layout_width="match_parent"
+        android:textColor="@color/branco"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/et_tela_conversor_valor_entrada"
+        android:layout_width="20dp"
+        android:layout_gravity="center"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_tela_conversor_seta"
+        android:src="@drawable/tela_conversor_seta"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="VALOR DE SAÍDA"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_tela_conversor_seta"
+        android:textColor="@color/branco"
+        android:id="@+id/tv_vsaid"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_below="@+id/tv_vsaid"
+        android:background="@drawable/borda_arredondada_tela_conversor"
+        android:backgroundTintMode="screen"
+        android:popupBackground="@color/verde"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/sp_tela_conversor_valor_saida">
+    </Spinner>
+    <TextView
+        android:layout_below="@+id/sp_tela_conversor_valor_saida"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="@color/branco"
+        android:id="@+id/tv_tela_conversor_valor_saida"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

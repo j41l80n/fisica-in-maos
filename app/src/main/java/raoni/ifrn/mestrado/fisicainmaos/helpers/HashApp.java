@@ -27,7 +27,7 @@ public class HashApp extends Application
         try
         {
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "raoni.ifrn.mestrado.fisicainmaos.helpers", PackageManager.GET_SIGNATURES);
+                    getPackageName(), PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures)
             {
                 MessageDigest md = MessageDigest.getInstance("SHA");

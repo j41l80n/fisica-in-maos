@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tela_biografias" >
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+                <Button
+                    android:id="@+id/tela_resumos_bt_cinematiaca"
+                    android:background="@drawable/bt_personalizado_cinematica"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+                <Button
+                    android:background="@drawable/bt_personalizado_dinamica"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/tela_resumos_bt_dinamica"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+                <Button
+                    android:background="@drawable/bt_personalizado_estatica"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tela_resumos_bt_estatica"
+                    android:layout_height="55dp" />
+                <Button
+                    android:id="@+id/tela_resumos_bt_gravitacao"
+                    android:background="@drawable/bt_personalizado_gravitacao"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+                <Button
+                    android:id="@+id/tela_resumos_bt_hidrodinamica"
+                    android:background="@drawable/bt_personalizado_hidrodinamica"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/tela_resumos_bt_hidrostatica"
+                    android:background="@drawable/bt_personalizado_hidrostatica"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="55dp" />
+                <Button
+                    android:id="@+id/tela_resumos_bt_mhs"
+                    android:background="@drawable/bt_personalizado_mhs"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="55dp" />
+                <Button
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/tela_resumos_bt_si"
+                    android:background="@drawable/bt_personalizado_si"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

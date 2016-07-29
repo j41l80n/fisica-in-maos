@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/branco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_01"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_hdn_1"
+            android:layout_width="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0106"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_height="60dp" />
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_02"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_03"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_01"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0026"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_04"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_02"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0027"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_05"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_03"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0028"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_02_extra_01"/>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_06"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0107"
+            android:layout_width="290dp"
+            android:scaleType="fitXY"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0108"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_height="60dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_07"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_04"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0029"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_08"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_05"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0030"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_09"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_06"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0031"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_02_extra_02"/>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_10"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0109"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_height="60dp" />
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_11"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/iv_hdn_3"
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+            android:layout_height="20dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_12"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_07"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0032"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_13"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_08"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0033"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_14"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_09"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0034"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_15"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_10"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0035"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_02_extra_03"/>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_vazao_16"/>
+    </LinearLayout>
+</ScrollView>

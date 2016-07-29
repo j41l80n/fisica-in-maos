@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tela_splash">
+    <ImageView
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="190dp"
+        android:layout_height="210dp"
+        android:id="@+id/atomo_splash"
+        android:src="@drawable/atomo_com_brilho"/>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/ifrn"/>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/sbf"/>
+</RelativeLayout>

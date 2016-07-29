@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:id="@+id/tv_tela_resumo_cinematica_03_01"/>
+        <ImageView
+            android:background="@color/branco"
+            android:src="@drawable/iv_0003"
+            android:layout_width="150dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_cinematica_03_02"/>
+        <ImageView
+            android:background="@color/branco"
+            android:src="@drawable/iv_0004"
+            android:layout_width="150dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_cinematica_03_03"/>
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/iv_0005"
+            android:background="@color/branco"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_height="120dp" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_cinematica_03_04"/>
+        <ImageView
+            android:background="@color/branco"
+            android:src="@drawable/iv_0006"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_height="100dp" />
+        <TextView android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tv_tela_resumo_cinematica_03_05"/>
+    </LinearLayout>
+</ScrollView>

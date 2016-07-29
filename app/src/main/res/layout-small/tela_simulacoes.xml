@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tela_biografias" >
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+                <Button
+                    android:background="@drawable/bt_personalizado_mecanica"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/bt_tela_simulacoes_mecanica"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <Button
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/bt_tela_simulacoes_ondas_optica"
+                    android:background="@drawable/bt_personalizado_ondas_optica"
+                    android:layout_height="50dp" />
+                <Button
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt_tela_simulacoes_eletricidade"
+                    android:background="@drawable/bt_personalizado_eletricidade"
+                    android:layout_height="50dp" />
+                <Button
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/bt_tela_simulacoes_magnetismo"
+                    android:background="@drawable/bt_personalizado_magnetismo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/bt_tela_simulacoes_fisica_moderna"
+                    android:background="@drawable/bt_personalizado_fisica_moderna"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

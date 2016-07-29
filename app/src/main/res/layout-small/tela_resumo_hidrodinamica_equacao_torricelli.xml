@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_torricelli_01"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_hdn_4"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_torricelli_02"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_01"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0036"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_torricelli_03"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_02"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0037"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_torricelli_04"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_hidrodinamica_vazao_03"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView
+                    android:textSize="17sp"
+                    android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_unidades_0038"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_05_extra_01"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0122"
+            android:layout_width="250dp"
+            android:scaleType="fitXY"
+            android:layout_height="180dp" />
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_hidrodinamica_equacao_torricelli_05"/>
+    </LinearLayout>
+</ScrollView>

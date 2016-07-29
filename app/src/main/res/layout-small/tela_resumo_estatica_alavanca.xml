@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_01"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_fl_"
+            android:layout_width="110dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_02"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0072"
+            android:layout_marginBottom="20dp"
+            android:layout_width="190dp"
+            android:scaleType="fitXY"
+            android:layout_height="90dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_03"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0076"
+            android:layout_width="300dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:layout_height="120dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_04"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0077"
+            android:layout_width="200dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:layout_height="80dp" />
+        <TextView android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_05"/>
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0081"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="120dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_06"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0082"
+            android:layout_width="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_07"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@color/branco"
+            android:src="@drawable/iv_0085"
+            android:layout_width="250dp"
+            android:scaleType="fitXY"
+            android:layout_height="130dp" />
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/tv_tela_resumo_estatica_alavanca_08"/>
+    </LinearLayout>
+</ScrollView>

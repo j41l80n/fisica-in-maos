@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tela_conversor" >
+    <TextView
+        android:layout_marginTop="30dp"
+        android:text="TEMA"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tv_tema"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/branco"
+        android:textStyle="italic|bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:singleLine="true"
+        android:padding="3dp"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="5dp"
+        android:prompt="@string/escolha"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/tv_tema"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/borda_arredondada_tela_conversor"
+        android:popupBackground="@color/cinza"
+        android:id="@+id/sp_tema"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ASSUNTO"
+        android:textColor="@color/branco"
+        android:id="@+id/tv_assunto"
+        android:textStyle="italic|bold"
+        android:layout_below="@+id/sp_tema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="45dp"
+        android:singleLine="true"
+        android:padding="3dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/escolha"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_assunto"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/borda_arredondada_tela_conversor"
+        android:popupBackground="@color/cinza"
+        android:id="@+id/sp_assunto">
+    </Spinner>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:background="@drawable/bt_personalizado_inicia_quiz"
+        android:id="@+id/bt_iniciar_quiz"
+        android:layout_below="@+id/sp_assunto"
+        android:layout_height="60dp" />
+</RelativeLayout>

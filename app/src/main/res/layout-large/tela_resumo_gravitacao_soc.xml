@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_gravitacao_soc_01"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iv_gv_5_1"
+            android:layout_width="290dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_gravitacao_soc_02"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_gravitacao_soc_01"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:text="m/s"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_gravitacao_soc_03"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_gravitacao_soc_02"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_gravitacao_extra_input3_0001"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_gravitacao_soc_04"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_gravitacao_soc_03"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:text="Kg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_tela_resumo_gravitacao_soc_05"/>
+                <EditText
+                    android:ems="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_tela_resumo_gravitacao_soc_04"
+                    android:inputType="numberDecimal" >
+                </EditText>
+                <TextView android:textSize="17sp" android:textColor="@color/preto"
+                    android:layout_width="match_parent"
+                    android:text="m"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tv_tela_gravitacao_soc_extra_001"/>
+        <TextView android:textSize="17sp" android:textColor="@color/preto"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tela_resumo_gravitacao_soc_06"/>
+    </LinearLayout>
+</ScrollView>
