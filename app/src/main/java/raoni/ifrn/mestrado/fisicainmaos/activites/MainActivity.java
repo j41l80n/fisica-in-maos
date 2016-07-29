@@ -28,6 +28,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
+import raoni.ifrn.mestrado.fisicainmaos.helpers.ShakeEventListener;
 
 public class MainActivity extends FragmentActivity
 {
