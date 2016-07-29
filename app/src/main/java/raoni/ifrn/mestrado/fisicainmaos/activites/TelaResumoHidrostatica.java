@@ -45,14 +45,8 @@ public class TelaResumoHidrostatica extends AppCompatActivity
 
         tabs = (SlidingTabLayout) findViewById(R.id.tabs);
         tabs.setDistributeEvenly(true);
-        tabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer()
-        {
-            @Override
-            public int getIndicatorColor(int position)
-            {
-                return getResources().getColor(R.color.tabsScrollColor);
-            }
-        });
+        tabs.setSelectedIndicatorColors(getResources().getColor(R.color.branco));
+
         tabs.setViewPager(pager);
     }
 }

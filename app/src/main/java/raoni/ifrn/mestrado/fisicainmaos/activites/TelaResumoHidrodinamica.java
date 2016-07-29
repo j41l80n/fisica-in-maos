@@ -46,11 +46,7 @@ public class TelaResumoHidrodinamica extends AppCompatActivity
 
         tabs = (SlidingTabLayout) findViewById(R.id.tabs);
         tabs.setDistributeEvenly(true);
-        tabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
-            public int getIndicatorColor(int position) {
-                return getResources().getColor(R.color.tabsScrollColor);
-            }
-        });
+        tabs.setSelectedIndicatorColors(getResources().getColor(R.color.branco));
 
         tabs.setViewPager(pager);
     }

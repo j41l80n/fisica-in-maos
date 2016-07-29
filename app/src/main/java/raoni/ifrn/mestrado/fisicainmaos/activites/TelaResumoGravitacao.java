@@ -37,7 +37,14 @@ public class TelaResumoGravitacao extends AppCompatActivity
 
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("GRAVITAÇÃO");
+
+        if (toolbar != null)
+        {
+            setSupportActionBar(toolbar);
+        }
+
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("GRAVITAÇÃO");
 
         adapter =  new ViewPagerAdapterGravitacao(getSupportFragmentManager(), Titles, Numboftabs);
 
@@ -46,16 +53,9 @@ public class TelaResumoGravitacao extends AppCompatActivity
 
         tabs = (SlidingTabLayout) findViewById(R.id.tabs);
         tabs.setDistributeEvenly(true);
-        tabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
-            @Override
-            public int getIndicatorColor(int position) {
-                return getResources().getColor(R.color.tabsScrollColor);
-            }
-        });
+        tabs.setSelectedIndicatorColors(getResources().getColor(R.color.branco));
+
         tabs.setViewPager(pager);
         pager.setOffscreenPageLimit(1);
-
-
-
     }
 }
