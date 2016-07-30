@@ -25,7 +25,7 @@ import raoni.ifrn.mestrado.fisicainmaos.R;
 import raoni.ifrn.mestrado.fisicainmaos.helpers.BancoDadosPerguntas;
 import raoni.ifrn.mestrado.fisicainmaos.helpers.Questao;
 
-public class TelaQuiz extends Activity
+public class Quiz extends Activity
 {
     private List<Questao> arrayListQuestao;
     private int pontuacao;
@@ -64,34 +64,39 @@ public class TelaQuiz extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_quiz);
 
+        setup();
+    }
+
+    private void setup()
+    {
         intent = getIntent();
         bundle = getIntent().getExtras();
 
-        configuraRelativeLayout();
-        configuraTextView();
-        configuraRadioGroup();
-        configuraRadioButton();
-        verificaAssertiva();
-        configuraScrollView();
-        iniciarQuis();
-        configuraButton();
-        terminarJogo();
+        setupRelativeLayout();
+        setupTextViews();
+        setupRadioGroup();
+        setupRadioButtons();
+        checkQuestion();
+        setupScrollViews();
+        startQuis();
+        setupButtons();
+        endGame();
     }
 
-    private void configuraButton()
+    private void setupButtons()
     {
         //
         btTerminar = (Button) findViewById(R.id.bt_terminar_quiz);
     }
 
-    private void terminarJogo()
+    private void endGame()
     {
         btTerminar.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                esconderComponentes();
+                hideComponents();
                 bundleTelaQuiz = new Bundle();
                 bundleTelaQuiz.putInt("acertos", acertos);
                 bundleTelaQuiz.putInt("erros", erros);
@@ -103,25 +108,25 @@ public class TelaQuiz extends Activity
         });
     }
 
-    private void configuraScrollView()
+    private void setupScrollViews()
     {
-        scrollView = (ScrollView) findViewById(R.id.sv_quis);
         //
+        scrollView = (ScrollView) findViewById(R.id.sv_quis);
     }
 
-    private void iniciarQuis()
+    private void startQuis()
     {
         toast("toque na tela para iniciar");
         rlPrincipal.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) {
-                mostrarComponentes();
+                showComponents();
             }
         });
     }
 
-    private void mostrarComponentes()
+    private void showComponents()
     {
         tvPergunta.setVisibility(View.VISIBLE);
         scrollView.setVisibility(View.VISIBLE);
@@ -132,7 +137,7 @@ public class TelaQuiz extends Activity
 
         questaoAtual = arrayListQuestao.get(0);
 
-        setarNovaQuestao();
+        newQuestion();
 
         rlPrincipal.setOnClickListener(new View.OnClickListener()
         {
@@ -143,33 +148,34 @@ public class TelaQuiz extends Activity
         });
     }
 
-    private void configuraRelativeLayout()
+    private void setupRelativeLayout()
     {
+        //
         rlPrincipal = (RelativeLayout) findViewById(R.id.rl_principal);
     }
 
-    private void verificaAssertiva()
+    private void checkQuestion()
     {
-        rgQuiz.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        rgQuiz.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
+            public void onCheckedChanged(RadioGroup group, int checkedId)
+            {
                 if (
-                        rbAssertivaA.isChecked()
-                                || rbAssertivaB.isChecked()
-                                || rbAssertivaC.isChecked()
-                                || rbAssertivaD.isChecked()) {
+                        rbAssertivaA.isChecked() || rbAssertivaB.isChecked()
+                                || rbAssertivaC.isChecked() || rbAssertivaD.isChecked())
+                {
                     intentTelaQuiz = new Intent(getApplicationContext(), TelaQuizConfirmaResposta.class);
 
-                    //int resID = getApplicationContext().getResources().getIdentifier("clicou", "raw", getApplicationContext().getPackageName());
                     int resID = getApplicationContext().getResources().getIdentifier("clicou", "raw", getApplicationContext().getPackageName());
-                    tocarSon(resID);
+                    playSound(resID);
                     startActivityForResult(intentTelaQuiz, 0);
                 }
             }
         });
     }
 
-    private void configuraTextView()
+    private void setupTextViews()
     {
         tvPergunta = (TextView) findViewById(R.id.tela_quiz_tv_pergunta);
         tvPergunta.setTextColor(getResources().getColor(R.color.branco));
@@ -179,12 +185,13 @@ public class TelaQuiz extends Activity
         tvPergunta.setTypeface(font);
     }
 
-    private void configuraRadioGroup()
+    private void setupRadioGroup()
     {
+        //
         rgQuiz = (RadioGroup)findViewById(R.id.tela_quiz_rg_quiz);
     }
 
-    private void configuraRadioButton()
+    private void setupRadioButtons()
     {
         rbAssertivaA = (RadioButton) findViewById(R.id.tela_quiz_rb_acertiva_a);
         rbAssertivaB = (RadioButton) findViewById(R.id.tela_quiz_rb_acertiva_b);
@@ -207,7 +214,7 @@ public class TelaQuiz extends Activity
         //rbAssertivaD.setShadowLayer(3, 0, 0, getResources().getColor(R.color.DeepSkyBlue));
     }
 
-    private void setarNovaQuestao()
+    private void newQuestion()
     {
         tvPergunta.setText(Html.fromHtml(questaoAtual.getQuestao()));
         //tvcodigo.setText(Html.fromHtml(questaoAtual.getTema() + ""));
@@ -257,9 +264,8 @@ public class TelaQuiz extends Activity
                     if(resposta.equals(verificadorQuestao))
                     {
                         acertos++;
-                        //int resID = getApplicationContext().getResources().getIdentifier("clicou.mp3", "raw", getApplicationContext().getPackageName());
                         int resID = getApplicationContext().getResources().getIdentifier("acertou", "raw", getApplicationContext().getPackageName());
-                        tocarSon(resID);
+                        playSound(resID);
                         //tvQuantidadeAcertos.setText("acertos: " + acertos);
                         toast("você acertou");
                     }
@@ -267,7 +273,7 @@ public class TelaQuiz extends Activity
                     {
                         erros++;
                         int resID = getApplicationContext().getResources().getIdentifier("no", "raw", getApplicationContext().getPackageName());
-                        tocarSon(resID);
+                        playSound(resID);
                         //tvQuantidadeErros.setText("erros: " + erros);
                         toast("você errou");
                     }
@@ -276,12 +282,12 @@ public class TelaQuiz extends Activity
                         arrayListQuestao.remove(0);
                         Collections.shuffle(arrayListQuestao);
                         questaoAtual = arrayListQuestao.get(0);
-                        setarNovaQuestao();
+                        newQuestion();
                     }
                     else if (quantidadeQuestoesJogadas == teste)
                     {
                         //arrayListQuestao.remove(0);
-                        esconderComponentes();
+                        hideComponents();
                         bundleTelaQuiz = new Bundle();
                         bundleTelaQuiz.putInt("acertos", acertos);
                         bundleTelaQuiz.putInt("erros", erros);
@@ -302,14 +308,11 @@ public class TelaQuiz extends Activity
 
     private void resetaAssertivas()
     {
+        //
         rgQuiz.clearCheck();
-        //rbAssertivaA.setShadowLayer(3, 0, 0, getResources().getColor(R.color.DeepSkyBlue));
-        //rbAssertivaB.setShadowLayer(3, 0, 0, getResources().getColor(R.color.DeepSkyBlue));
-        //rbAssertivaC.setShadowLayer(3, 0, 0, getResources().getColor(R.color.DeepSkyBlue));
-        //rbAssertivaD.setShadowLayer(3, 0, 0, getResources().getColor(R.color.DeepSkyBlue));
     }
 
-    private void esconderComponentes()
+    private void hideComponents()
     {
         scrollView.setVisibility(View.GONE);
         btTerminar.setVisibility(View.GONE);
@@ -319,12 +322,12 @@ public class TelaQuiz extends Activity
 
     private void toast(String mensagem)
     {
+        //
         Toast.makeText(getApplicationContext(), mensagem, Toast.LENGTH_SHORT).show();
     }
 
-    public void tocarSon(int id)
+    public void playSound(int id)
     {
-
         mediaPlayer = MediaPlayer.create(getApplicationContext(), id);
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
         {
