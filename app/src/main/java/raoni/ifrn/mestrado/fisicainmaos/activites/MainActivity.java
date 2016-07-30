@@ -104,7 +104,7 @@ public class MainActivity extends FragmentActivity
             {
                 if(checkInternetConnection())
                 {
-                    intentMainActivity = new Intent(getApplicationContext(), TelaSimulacoes.class);
+                    intentMainActivity = new Intent(getApplicationContext(), SimulacoesActivity.class);
                     startActivity(intentMainActivity);
                 }
             }
@@ -118,7 +118,7 @@ public class MainActivity extends FragmentActivity
             @Override
             public void onClick(View v)
             {
-                intentMainActivity = new Intent(getApplicationContext(), TelaResumos.class);
+                intentMainActivity = new Intent(getApplicationContext(), ResumosActivity.class);
                 startActivity(intentMainActivity);
             }
         });
@@ -131,7 +131,7 @@ public class MainActivity extends FragmentActivity
             @Override
             public void onClick(View v)
             {
-                intentMainActivity = new Intent(getApplicationContext(), TelaConversor.class);
+                intentMainActivity = new Intent(getApplicationContext(), ConversorActivity.class);
                 startActivity(intentMainActivity);
             }
         });
@@ -144,7 +144,7 @@ public class MainActivity extends FragmentActivity
             @Override
             public void onClick(View v)
             {
-                intentMainActivity = new Intent(getApplicationContext(), TelaQuizEscolheTemaAssunto.class);
+                intentMainActivity = new Intent(getApplicationContext(), QuizEscolheTemaAssuntoActivity.class);
                 startActivity(intentMainActivity);
             }
         });
@@ -157,7 +157,7 @@ public class MainActivity extends FragmentActivity
             @Override
             public void onClick(View v)
             {
-                intentMainActivity = new Intent(getApplicationContext(), TelaBiografias.class);
+                intentMainActivity = new Intent(getApplicationContext(), BiografiasActivity.class);
                 startActivity(intentMainActivity);
             }
         });

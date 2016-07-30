@@ -25,7 +25,7 @@
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true" />
         <activity
-            android:name=".activites.TelaSplash"
+            android:name=".activites.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,23 +41,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activites.TelaSimulacoes"
+            android:name=".activites.SimulacoesActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumos"
+            android:name=".activites.ResumosActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.Quiz"
+            android:name=".activites.QuizActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografias"
+            android:name=".activites.BiografiasActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaConversor"
+            android:name=".activites.ConversorActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -85,134 +85,134 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaSteven"
+            android:name=".activites.BiografiaStevenActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaTorricelli"
+            android:name=".activites.BiografiaTorricelliActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacoesMecanica"
+            android:name=".activites.SimulacoesMecanicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoMecanica1"
+            android:name=".activites.SimulacaoMecanica1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoMecanica2"
+            android:name=".activites.SimulacaoMecanica2Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoMecanica3"
+            android:name=".activites.SimulacaoMecanica3Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoMecanica4"
+            android:name=".activites.SimulacaoMecanica4Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoMecanica5"
+            android:name=".activites.SimulacaoMecanica5Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoMecanica6"
+            android:name=".activites.SimulacaoMecanica6Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacoesOndasOptica"
+            android:name=".activites.SimulacoesOndasOpticaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoOndasOptica1"
+            android:name=".activites.SimulacaoOndasOptica1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoOndasOptica2"
+            android:name=".activites.SimulacaoOndasOptica2Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoEletricidade1"
+            android:name=".activites.SimulacaoEletricidade1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoEletricidade2"
+            android:name=".activites.SimulacaoEletricidade2Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoEletricidade3"
+            android:name=".activites.SimulacaoEletricidade3Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoEletricidade4"
+            android:name=".activites.SimulacaoEletricidade4Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacoesEletricidade"
+            android:name=".activites.SimulacoesEletricidadeActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacoesMagnetismo"
+            android:name=".activites.SimulacoesMagnetismoActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoMagnetismo1"
+            android:name=".activites.SimulacaoMagnetismo1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacaoFisicaModerna1"
+            android:name=".activites.SimulacaoFisicaModerna1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaSimulacoesFisicaModerna"
+            android:name=".activites.SimulacoesFisicaModernaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaQuizConfirmaResposta"
+            android:name=".activites.QuizConfirmaRespostaActivity"
             android:theme="@style/Theme.Transparent"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoCinematica"
+            android:name=".activites.ResumoCinematicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoDinamica"
+            android:name=".activites.ResumoDinamicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoEstatica"
+            android:name=".activites.ResumoEstaticaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoGravitacao"
+            android:name=".activites.ResumoGravitacaoActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoHidrodinamica"
+            android:name=".activites.ResumoHidrodinamicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoHidrostatica"
+            android:name=".activites.ResumoHidrostaticaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoMHS"
+            android:name=".activites.ResumoMHSActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaResumoSI"
+            android:name=".activites.ResumoSIActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaQuizEscolheTemaAssunto"
+            android:name=".activites.QuizEscolheTemaAssuntoActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaQuizResultado"
+            android:name=".activites.QuizResultadoActivity"
             android:theme="@style/Theme.Transparent"
-            android:parentActivityName=".activites.Quiz" >
+            android:parentActivityName=".activites.QuizActivity" >
         </activity>
     </application>
 </manifest>
