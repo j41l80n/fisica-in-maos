@@ -117,7 +117,7 @@ public class TelaConversor extends Activity
             "bar",
             "psi"};
 
-    //create
+
     public void onCreate(Bundle savedInstanceState)
     {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -126,12 +126,16 @@ public class TelaConversor extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_conversor);
 
+        setup();
+    }
 
-        configuraEditText();
-        configuraSpinner();
-        configuraImageView();
-        girarImagem(2000);
-        configuraTextview();
+    private void setup()
+    {
+        setupEditTexts();
+        setupSpinner();
+        setupImageViews();
+        rotateImage(2000);
+        setupTextviews();
 
         ArrayAdapter<String> adp = new ArrayAdapter<>(this, R.layout.spinner_textview, GRANDEZAS);
         adp.setDropDownViewResource(R.layout.spinner_textview);
@@ -143,8 +147,7 @@ public class TelaConversor extends Activity
         editTextValorEntrada();
     }
 
-    //configura textviews
-    private void configuraTextview()
+    private void setupTextviews()
     {
         TextView tvGrandeza = (TextView) findViewById(R.id.tv_grandeza);
         TextView tvValorEntrada = (TextView) findViewById(R.id.tv_ve);
@@ -160,38 +163,25 @@ public class TelaConversor extends Activity
         tvTelaConversorValorSaida.setTypeface(font);
     }
 
-    //configura imageviews
-    private void configuraImageView()
+    private void setupImageViews()
     {
+        //
         ivTelaConversorSeta = (ImageView) findViewById(R.id.iv_tela_conversor_seta);
     }
 
-    private void girarImagem(long time)
+    private void rotateImage(long time)
     {
-        //ivTelaConversorSeta.setOnClickListener(new View.OnClickListener()
-        //{
-        //    @Override
-        //    public void onClick(View view)
-        //    {
-        //        if(!ivTelaConversorSeta.isActivated())
-         //       {
-                    RotateAnimation anim = new RotateAnimation(0, 360,
-                            Animation.RELATIVE_TO_SELF, 0.5f,
-                            Animation.RELATIVE_TO_SELF, 0.5f);
-                    anim.setInterpolator(new LinearInterpolator());
-                    anim.setDuration(time);
-                    anim.setRepeatCount(0);
+        RotateAnimation anim = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f,
+                Animation.RELATIVE_TO_SELF, 0.5f);
 
-                    ivTelaConversorSeta.startAnimation(anim);
+        anim.setInterpolator(new LinearInterpolator());
+        anim.setDuration(time);
+        anim.setRepeatCount(0);
 
-          //      }
-
-           // }
-        //});
+        ivTelaConversorSeta.startAnimation(anim);
     }
 
-    //configura spinners
-    private void configuraSpinner()
+    private void setupSpinner()
     {
         spTelaConversorGrandeza = (Spinner) findViewById(R.id.sp_tela_conversor_grandeza);
         spTelaConversorValorEntrada = (Spinner) findViewById(R.id.sp_tela_conversor_valor_entrada);
@@ -205,16 +195,14 @@ public class TelaConversor extends Activity
 
         ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this, R.layout.spinner_textview, UNIDADES_VELOCIDADE);
         spTelaConversorValorSaida.setAdapter(adapter3);
-
     }
 
-    //configura edittexts
-    private void configuraEditText()
+    private void setupEditTexts()
     {
+        //
         etTelaConversorValorEntrada = (EditText) findViewById(R.id.et_tela_conversor_valor_entrada);
     }
 
-    //seleciona a grandeza
     private void spGrandeza()
     {
         spTelaConversorGrandeza.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
@@ -277,7 +265,6 @@ public class TelaConversor extends Activity
         });
     }
 
-    //seleciona o valor de entrada
     private void spValorEntrada()
     {
         spTelaConversorValorEntrada.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
@@ -313,7 +300,6 @@ public class TelaConversor extends Activity
         });
     }
 
-    //editText para ser inserido a ser convertido
     private void editTextValorEntrada()
     {
         etTelaConversorValorEntrada.addTextChangedListener(new TextWatcher() {
@@ -344,7 +330,6 @@ public class TelaConversor extends Activity
         });
     }
 
-    //ao selecionar, o spinner calcula o valor de saida
     private void spValorSaida()
     {
         spTelaConversorValorSaida.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
@@ -359,7 +344,7 @@ public class TelaConversor extends Activity
                 }
                 else
                 {
-                    girarImagem(500);
+                    rotateImage(500);
                     codigoSaida = position;
                     if (!etTelaConversorValorEntrada.getText().toString().equals(""))
                     {

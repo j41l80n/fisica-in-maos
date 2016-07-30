@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class TelaBiografiaGalileuGalilei extends FragmentActivity
+public class BiografiaGalileuGalileiActivity extends FragmentActivity
 {
     public void onCreate(Bundle savedInstanceState)
     {
@@ -20,9 +20,17 @@ public class TelaBiografiaGalileuGalilei extends FragmentActivity
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_galileu_galilei);
-        configuraTExtView();
+
+        setup();
     }
-    private void configuraTExtView()
+
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
     {
         TextView telaBiografiaGalileuGalileiTv01 = (TextView) findViewById(R.id.tela_biografia_galileu_galilei_tv_01);
         TextView telaBiografiaGalileuGalileiTv02 = (TextView) findViewById(R.id.tela_biografia_galileu_galilei_tv_02);
@@ -125,5 +133,4 @@ public class TelaBiografiaGalileuGalilei extends FragmentActivity
                 "\t\t- Em 1992, mais de três séculos passados da sua condenação, o Papa João Paulo II inicia a revisão do seu processo que decide pela sua absolvição.\n" +
                 "\t\t- No ano da morte de Galileu surge outro gênio, Isaac Newton.\n"));
     }
-
 }

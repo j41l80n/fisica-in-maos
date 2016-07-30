@@ -61,27 +61,27 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaArquimedes"
+            android:name=".activites.BiografiaArquimedesActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaBernoulli"
+            android:name=".activites.BiografiaBernoulliActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaBlaisePascal"
+            android:name=".activites.BiografiaBlaisePascalActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaGalileuGalilei"
+            android:name=".activites.BiografiaGalileuGalileiActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaIsaacNewton"
+            android:name=".activites.BiografiaIsaacNewtonActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.TelaBiografiaJohannesKepler"
+            android:name=".activites.BiografiaJohannesKeplerActivity"
             android:label="@string/app_name" >
         </activity>
         <activity

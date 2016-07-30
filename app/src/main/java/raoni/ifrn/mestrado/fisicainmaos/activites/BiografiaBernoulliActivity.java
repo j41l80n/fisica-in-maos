@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class TelaBiografiaBernoulli  extends FragmentActivity
+public class BiografiaBernoulliActivity extends FragmentActivity
 {
     public void onCreate(Bundle savedInstanceState)
     {
@@ -21,6 +21,17 @@ public class TelaBiografiaBernoulli  extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_bernoulli);
 
+        setup();
+    }
+
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
+    {
         TextView telaBiografiaBernoulliTv01 = (TextView) findViewById(R.id.tela_biografia_bernoulli_tv_01);
         TextView telaBiografiaBernoulliTv02 = (TextView) findViewById(R.id.tela_biografia_bernoulli_tv_02);
         TextView telaBiografiaBernoulliTv03 = (TextView) findViewById(R.id.tela_biografia_bernoulli_tv_03);
@@ -71,5 +82,4 @@ public class TelaBiografiaBernoulli  extends FragmentActivity
                 "<p>\tA família Bernoulli causou tanto impacto nas ciências e na matemática, que pelo " +
                 "menos cinco leis, princípios ou equações levam o nome Bernoulli.</p>"));
     }
-
 }

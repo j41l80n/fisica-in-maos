@@ -20,10 +20,17 @@ public class TelaBiografiaTorricelli extends FragmentActivity
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_torricelli);
-        configuraTextView();
+
+        setup();
     }
 
-    private void configuraTextView()
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
     {
         TextView telaBiografiaTorricelliTv01 = (TextView) findViewById(R.id.tela_biografia_torricelli_tv_01);
         TextView telaBiografiaTorricelliTv02 = (TextView) findViewById(R.id.tela_biografia_torricelli_tv_02);

@@ -21,6 +21,17 @@ public class TelaBiografiaSteven extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_steven);
 
+        setup();
+    }
+
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
+    {
         TextView telaBiografiaStevenTv01 = (TextView) findViewById(R.id.tela_biografia_steven_tv_01);
         TextView telaBiografiaStevenTv02 = (TextView) findViewById(R.id.tela_biografia_steven_tv_02);
         TextView telaBiografiaStevenTv03 = (TextView) findViewById(R.id.tela_biografia_steven_tv_03);

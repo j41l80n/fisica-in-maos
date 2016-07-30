@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class TelaBiografiaArquimedes extends FragmentActivity
+public class BiografiaArquimedesActivity extends FragmentActivity
 {
     public void onCreate(Bundle savedInstanceState)
     {
@@ -21,6 +21,17 @@ public class TelaBiografiaArquimedes extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_arquimedes);
 
+        setup();
+    }
+
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
+    {
         TextView telaBiografiaArquimedesTv01 = (TextView) findViewById(R.id.tela_biografia_arquimedes_tv_01);
         TextView telaBiografiaArquimedesTv02 = (TextView) findViewById(R.id.tela_biografia_arquimedes_tv_02);
         TextView telaBiografiaArquimedesTv03 = (TextView) findViewById(R.id.tela_biografia_arquimedes_tv_03);

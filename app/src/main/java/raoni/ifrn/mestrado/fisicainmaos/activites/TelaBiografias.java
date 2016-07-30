@@ -22,7 +22,6 @@ public class TelaBiografias extends FragmentActivity
     Button fisicoSteven;
     Button fisicoTorricelli;
     Intent intentTelaBiografias;
-    Bundle bundleTelaBiografias;
 
     public void onCreate(Bundle savedInstanceState)
     {
@@ -37,18 +36,18 @@ public class TelaBiografias extends FragmentActivity
 
     private void setup()
     {
-        configuraButtons();
-        chamaTelaBiografiaArquimedes();
-        chamaTelaBiografiaBernoulli();
-        chamaTelaBiografiaBlaisePascal();
-        chamaTelaBiografiaGalileuGalilei();
-        chamaTelaBiografiaIsaacNewton();
-        chamaTelaBiografiaJohannesKepler();
-        chamaTelaBiografiaSteven();
-        chamaTelaBiografiaTorricelli();
+        setupButtons();
+        arquimedes();
+        bernoulli();
+        blaisePascal();
+        galileuGalilei();
+        isaacNewton();
+        johannesKepler();
+        steven();
+        torricelli();
     }
 
-    private void configuraButtons()
+    private void setupButtons()
     {
         fisicoArquimedes = (Button) findViewById(R.id.tela_biografias_bt_fisico_arquimedes);
         fisicoBernoulli = (Button) findViewById(R.id.tela_biografias_bt_fisico_bernoulli);
@@ -60,73 +59,73 @@ public class TelaBiografias extends FragmentActivity
         fisicoTorricelli = (Button) findViewById(R.id.tela_biografias_bt_fisico_torricelli);
     }
 
-    private void chamaTelaBiografiaArquimedes()
+    private void arquimedes()
     {
         fisicoArquimedes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intentTelaBiografias = new Intent(getApplicationContext(), TelaBiografiaArquimedes.class);
+                intentTelaBiografias = new Intent(getApplicationContext(), BiografiaArquimedesActivity.class);
                 startActivity(intentTelaBiografias);
             }
         });
     }
 
-    private void chamaTelaBiografiaBernoulli()
+    private void bernoulli()
     {
         fisicoBernoulli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intentTelaBiografias = new Intent(getApplicationContext(), TelaBiografiaBernoulli.class);
+                intentTelaBiografias = new Intent(getApplicationContext(), BiografiaBernoulliActivity.class);
                 startActivity(intentTelaBiografias);
             }
         });
     }
 
-    private void chamaTelaBiografiaBlaisePascal()
+    private void blaisePascal()
     {
         fisicoBlaisePascal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intentTelaBiografias = new Intent(getApplicationContext(), TelaBiografiaBlaisePascal.class);
+                intentTelaBiografias = new Intent(getApplicationContext(), BiografiaBlaisePascalActivity.class);
                 startActivity(intentTelaBiografias);
             }
         });
     }
 
-    private void chamaTelaBiografiaGalileuGalilei()
+    private void galileuGalilei()
     {
         fisicoGalileuGalilei.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intentTelaBiografias = new Intent(getApplicationContext(), TelaBiografiaGalileuGalilei.class);
+                intentTelaBiografias = new Intent(getApplicationContext(), BiografiaGalileuGalileiActivity.class);
                 startActivity(intentTelaBiografias);
             }
         });
     }
 
-    private void chamaTelaBiografiaIsaacNewton()
+    private void isaacNewton()
     {
         fisicoIsaacNewton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intentTelaBiografias = new Intent(getApplicationContext(), TelaBiografiaIsaacNewton.class);
+                intentTelaBiografias = new Intent(getApplicationContext(), BiografiaIsaacNewtonActivity.class);
                 startActivity(intentTelaBiografias);
             }
         });
     }
 
-    private void chamaTelaBiografiaJohannesKepler ()
+    private void johannesKepler()
     {
         fisicoJohannesKepler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intentTelaBiografias = new Intent(getApplicationContext(), TelaBiografiaJohannesKepler.class);
+                intentTelaBiografias = new Intent(getApplicationContext(), BiografiaJohannesKeplerActivity.class);
                 startActivity(intentTelaBiografias);
             }
         });
     }
 
-    private void chamaTelaBiografiaSteven ()
+    private void steven()
     {
         fisicoSteven.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,7 +136,7 @@ public class TelaBiografias extends FragmentActivity
         });
     }
 
-    private void chamaTelaBiografiaTorricelli()
+    private void torricelli()
     {
         fisicoTorricelli.setOnClickListener(new View.OnClickListener() {
             @Override

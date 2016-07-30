@@ -11,9 +11,8 @@ import android.widget.TextView;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class TelaBiografiaBlaisePascal extends FragmentActivity
+public class BiografiaBlaisePascalActivity extends FragmentActivity
 {
-
     public void onCreate(Bundle savedInstanceState)
     {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -22,10 +21,16 @@ public class TelaBiografiaBlaisePascal extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_blaise_pascal);
 
-        configuraEditText();
+        setup();
     }
 
-    private void configuraEditText()
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
     {
         TextView telaBiografiaBlaisePascalTv01 = (TextView) findViewById(R.id.tela_biografia_blaise_pascal_tv_01);
         TextView telaBiografiaBlaisePascalTv02 = (TextView) findViewById(R.id.tela_biografia_blaise_pascal_tv_02);

@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class TelaBiografiaJohannesKepler extends FragmentActivity
+public class BiografiaJohannesKeplerActivity extends FragmentActivity
 {
     public void onCreate(Bundle savedInstanceState)
     {
@@ -21,6 +21,17 @@ public class TelaBiografiaJohannesKepler extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_johannes_kepler);
 
+        setup();
+    }
+
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
+    {
         TextView telaBiografiaJohannesKeplerTv01 = (TextView) findViewById(R.id.tela_biografia_johannes_kepler_tv_01);
         TextView telaBiografiaJohannesKeplerTv02 = (TextView) findViewById(R.id.tela_biografia_johannes_kepler_tv_02);
         TextView telaBiografiaJohannesKeplerTv03 = (TextView) findViewById(R.id.tela_biografia_johannes_kepler_tv_03);

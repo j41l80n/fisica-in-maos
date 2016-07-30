@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class TelaBiografiaIsaacNewton extends FragmentActivity
+public class BiografiaIsaacNewtonActivity extends FragmentActivity
 {
     public void onCreate(Bundle savedInstanceState)
     {
@@ -21,6 +21,17 @@ public class TelaBiografiaIsaacNewton extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_biografia_isaac_newton);
 
+        setup();
+    }
+
+    private void setup()
+    {
+        //
+        setupTextViews();
+    }
+
+    private void setupTextViews()
+    {
         TextView telaBiografiaIsaacNewtonTv01 = (TextView) findViewById(R.id.tela_biografia_isaac_newton_tv_01);
         TextView telaBiografiaIsaacNewtonTv02 = (TextView) findViewById(R.id.tela_biografia_isaac_newton_tv_02);
         TextView telaBiografiaIsaacNewtonTv03 = (TextView) findViewById(R.id.tela_biografia_isaac_newton_tv_03);
@@ -120,5 +131,4 @@ public class TelaBiografiaIsaacNewton extends FragmentActivity
                 "conhecido que ele nunca teve relações sexuais, era muito solitário e alguns " +
                 "historiadores afirmam que ele era homossexual.<br/><br/>"));
     }
-
 }

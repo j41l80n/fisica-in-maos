@@ -3,17 +3,12 @@ package raoni.ifrn.mestrado.fisicainmaos.activites;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.hardware.SensorManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Base64;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -24,8 +19,6 @@ import com.facebook.FacebookSdk;
 import com.facebook.CallbackManager;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.share.widget.LikeView;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 import raoni.ifrn.mestrado.fisicainmaos.helpers.ShakeEventListener;
@@ -61,12 +54,12 @@ public class MainActivity extends FragmentActivity
     private void setup()
     {
         setupButtons();
-        chamaTelaSimulacoes();
-        chamaTelaResumos();
-        chamaTelaQuiz();
-        chamaTelaConversor();
-        chamaTelaBiografias();
-        chamaEmail();
+        simulacoes();
+        resumos();
+        quiz();
+        conversor();
+        biografias();
+        sendEamil();
         likeView();
         //eventShake();
         //animatedIconAtom();
@@ -103,13 +96,13 @@ public class MainActivity extends FragmentActivity
         btConversor = (Button) findViewById(R.id.activity_main_bt_conversor);
     }
 
-    private void chamaTelaSimulacoes()
+    private void simulacoes()
     {
         btSimulacoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                if(verificarConexaoInternet())
+                if(checkInternetConnection())
                 {
                     intentMainActivity = new Intent(getApplicationContext(), TelaSimulacoes.class);
                     startActivity(intentMainActivity);
@@ -118,7 +111,7 @@ public class MainActivity extends FragmentActivity
         });
     }
 
-    private void chamaTelaResumos()
+    private void resumos()
     {
         btResumos.setOnClickListener(new View.OnClickListener()
         {
@@ -131,7 +124,7 @@ public class MainActivity extends FragmentActivity
         });
     }
 
-    private void chamaTelaConversor()
+    private void conversor()
     {
         btConversor.setOnClickListener(new View.OnClickListener()
         {
@@ -144,7 +137,7 @@ public class MainActivity extends FragmentActivity
         });
     }
 
-    private void chamaTelaQuiz()
+    private void quiz()
     {
         btQuiz.setOnClickListener(new View.OnClickListener()
         {
@@ -157,7 +150,7 @@ public class MainActivity extends FragmentActivity
         });
     }
 
-    private void chamaTelaBiografias()
+    private void biografias()
     {
         btBiografias.setOnClickListener(new View.OnClickListener()
         {
@@ -170,7 +163,7 @@ public class MainActivity extends FragmentActivity
         });
     }
 
-    private void chamaEmail()
+    private void sendEamil()
     {
         btEmail.setOnClickListener(new View.OnClickListener()
         {
@@ -178,17 +171,17 @@ public class MainActivity extends FragmentActivity
             public void onClick(View v)
             {
                 btEmail.setBackground(getResources().getDrawable(R.drawable.bt_enviar_email_pressed));
-                if(verificarConexaoInternet())
+                if(checkInternetConnection())
                 {
-                    Toast.makeText(getApplicationContext(), "Evie um email ao idealizador", Toast.LENGTH_LONG).show();
-                    enviarEmail();
+                    Toast.makeText(getApplicationContext(), "Envie um email ao idealizador", Toast.LENGTH_LONG).show();
+                    emailMessage();
                 }
 
             }
         });
     }
 
-    public boolean verificarConexaoInternet()
+    public boolean checkInternetConnection()
     {
         ConnectivityManager conectivtyManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = conectivtyManager.getActiveNetworkInfo();
@@ -209,16 +202,14 @@ public class MainActivity extends FragmentActivity
         }
     }
 
-    protected void enviarEmail()
+    protected void emailMessage()
     {
         String[] TO = {"fisicainmaos@hotmail.com"};
-        String[] CC = {"jailson_donald_cobain@hotmail.com"};
 
         intentMainActivity= new Intent(Intent.ACTION_SEND);
         intentMainActivity.setData(Uri.parse("mailto:"));
         intentMainActivity.setType("text/plain");
         intentMainActivity.putExtra(Intent.EXTRA_EMAIL, TO);
-        intentMainActivity.putExtra(Intent.EXTRA_CC, CC);
         intentMainActivity.putExtra(Intent.EXTRA_SUBJECT, "Fisica in Mãos");
         intentMainActivity.putExtra(Intent.EXTRA_TEXT, "Escreva seu email");
 
@@ -228,7 +219,7 @@ public class MainActivity extends FragmentActivity
         }
         catch (android.content.ActivityNotFoundException e)
         {
-            Toast.makeText(getApplicationContext(), "Nao ha cliente de email instalado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Nao há cliente de email instalado", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -247,7 +238,6 @@ public class MainActivity extends FragmentActivity
     protected void onResume()
     {
         super.onResume();
-        // Logs 'install' and 'app activate' App Events.
         AppEventsLogger.activateApp(this);
         //mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_UI);
     }
