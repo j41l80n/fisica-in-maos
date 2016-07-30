@@ -92,7 +92,7 @@ public class TelaQuizResultado extends Activity
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/days_lattes_28.ttf");
         tvAcertos.setTypeface(font);
         tvErros.setTypeface(font);
-//        tvPulos.setTypeface(font);
+        //tvPulos.setTypeface(font);
 
         tvAcertos.setText("Acertos: " + bundleTelaQuizResultado.getInt("acertos"));
         tvErros.setText("Erros: " + bundleTelaQuizResultado.getInt("erros"));

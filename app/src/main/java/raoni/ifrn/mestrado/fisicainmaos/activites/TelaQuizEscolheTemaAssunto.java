@@ -62,16 +62,21 @@ public class TelaQuizEscolheTemaAssunto extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_quiz_seleciona_temas);
 
-        int t = bancoDadosPerguntas.quantidadePerguntas();
-
-        configuraSpinner();
-        configuraButton();
-        temaEscolhido();
-        iniciaQuiz();
-        configuraTextView();
+        setup();
     }
 
-    private void configuraTextView()
+    private void setup()
+    {
+        int t = bancoDadosPerguntas.quantidadePerguntas();
+
+        setupSpinner();
+        setupButton();
+        temaEscolhido();
+        startQuiz();
+        setupTextViews();
+    }
+
+    private void setupTextViews()
     {
         tvTema = (TextView) findViewById(R.id.tv_tema);
         tvAssunto = (TextView) findViewById(R.id.tv_assunto);
@@ -79,10 +84,9 @@ public class TelaQuizEscolheTemaAssunto extends Activity
         Typeface font = Typeface.createFromAsset(getApplicationContext().getAssets(), "fonts/appleberry.ttf");
         tvTema.setTypeface(font);
         tvAssunto.setTypeface(font);
-
     }
 
-    private void configuraSpinner()
+    private void setupSpinner()
     {
         spTema = (Spinner) findViewById(R.id.sp_tema);
         spAssunto = (Spinner) findViewById(R.id.sp_assunto);
@@ -90,13 +94,13 @@ public class TelaQuizEscolheTemaAssunto extends Activity
         preencheSpinnerTemas();
     }
 
-    private void configuraButton()
+    private void setupButton()
     {
         //
         btIniciaQuiz = (Button) findViewById(R.id.bt_iniciar_quiz);
     }
 
-    private void iniciaQuiz()
+    private void startQuiz()
     {
         btIniciaQuiz.setOnClickListener(new View.OnClickListener()
         {
@@ -108,7 +112,7 @@ public class TelaQuizEscolheTemaAssunto extends Activity
                 bundle.putInt("tema", (spTema.getSelectedItemPosition() + 1));
                 bundle.putInt("assunto", (spAssunto.getSelectedItemPosition() + 1));
                 //bundleTelaQuiz.putInt("pulos", pulosUtilizados);
-                intent = new Intent(getApplicationContext(), TelaQuiz.class);
+                intent = new Intent(getApplicationContext(), Quiz.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
@@ -132,7 +136,6 @@ public class TelaQuizEscolheTemaAssunto extends Activity
 
         });
     }
-
 
     private void preencheSpinnerAssuntos()
     {

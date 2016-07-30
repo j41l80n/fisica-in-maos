@@ -28,12 +28,21 @@ public class TelaQuizConfirmaResposta extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_quiz_confirma_resposta);
 
-        btConfirmaResposta = (Button) findViewById(R.id.bt_confirma_resposta);
-        btCancelaResposta = (Button) findViewById(R.id.bt_cancela_resposta);
+        setup();
+    }
 
+    private void setup()
+    {
+        setupButtons();
         confirmarResposta();
         cancelarResposta();
-        configurarJanela();
+        setupWindow();
+    }
+
+    private void setupButtons()
+    {
+        btConfirmaResposta = (Button) findViewById(R.id.bt_confirma_resposta);
+        btCancelaResposta = (Button) findViewById(R.id.bt_cancela_resposta);
     }
 
     private void confirmarResposta()
@@ -66,7 +75,7 @@ public class TelaQuizConfirmaResposta extends Activity
         });
     }
 
-    private void configurarJanela()
+    private void setupWindow()
     {
         WindowManager.LayoutParams parametros = getWindow().getAttributes();
         parametros.width = LinearLayout.LayoutParams.MATCH_PARENT;
