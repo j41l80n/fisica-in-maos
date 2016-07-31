@@ -2537,9 +2537,6 @@ public class BancoDadosPerguntas extends SQLiteOpenHelper
         {
 
         }
-
         return row;
     }
-
-
 }
