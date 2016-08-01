@@ -25,7 +25,7 @@
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true" />
         <activity
-            android:name=".activites.SplashActivity"
+            android:name=".activities.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activites.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,178 +41,178 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activites.SimulacoesActivity"
+            android:name=".activities.SimulacoesActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumosActivity"
+            android:name=".activities.ResumosActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.QuizActivity"
+            android:name=".activities.QuizActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiasActivity"
+            android:name=".activities.BiografiasActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ConversorActivity"
+            android:name=".activities.ConversorActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaArquimedesActivity"
+            android:name=".activities.BiografiaArquimedesActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaBernoulliActivity"
+            android:name=".activities.BiografiaBernoulliActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaBlaisePascalActivity"
+            android:name=".activities.BiografiaBlaisePascalActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaGalileuGalileiActivity"
+            android:name=".activities.BiografiaGalileuGalileiActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaIsaacNewtonActivity"
+            android:name=".activities.BiografiaIsaacNewtonActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaJohannesKeplerActivity"
+            android:name=".activities.BiografiaJohannesKeplerActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaStevenActivity"
+            android:name=".activities.BiografiaStevenActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.BiografiaTorricelliActivity"
+            android:name=".activities.BiografiaTorricelliActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacoesMecanicaActivity"
+            android:name=".activities.SimulacoesMecanicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoMecanica1Activity"
+            android:name=".activities.SimulacaoMecanica1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoMecanica2Activity"
+            android:name=".activities.SimulacaoMecanica2Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoMecanica3Activity"
+            android:name=".activities.SimulacaoMecanica3Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoMecanica4Activity"
+            android:name=".activities.SimulacaoMecanica4Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoMecanica5Activity"
+            android:name=".activities.SimulacaoMecanica5Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoMecanica6Activity"
+            android:name=".activities.SimulacaoMecanica6Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacoesOndasOpticaActivity"
+            android:name=".activities.SimulacoesOndasOpticaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoOndasOptica1Activity"
+            android:name=".activities.SimulacaoOndasOptica1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoOndasOptica2Activity"
+            android:name=".activities.SimulacaoOndasOptica2Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoEletricidade1Activity"
+            android:name=".activities.SimulacaoEletricidade1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoEletricidade2Activity"
+            android:name=".activities.SimulacaoEletricidade2Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoEletricidade3Activity"
+            android:name=".activities.SimulacaoEletricidade3Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoEletricidade4Activity"
+            android:name=".activities.SimulacaoEletricidade4Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacoesEletricidadeActivity"
+            android:name=".activities.SimulacoesEletricidadeActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacoesMagnetismoActivity"
+            android:name=".activities.SimulacoesMagnetismoActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoMagnetismo1Activity"
+            android:name=".activities.SimulacaoMagnetismo1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacaoFisicaModerna1Activity"
+            android:name=".activities.SimulacaoFisicaModerna1Activity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.SimulacoesFisicaModernaActivity"
+            android:name=".activities.SimulacoesFisicaModernaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.QuizConfirmaRespostaActivity"
+            android:name=".activities.QuizConfirmaRespostaActivity"
             android:theme="@style/Theme.Transparent"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoCinematicaActivity"
+            android:name=".activities.ResumoCinematicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoDinamicaActivity"
+            android:name=".activities.ResumoDinamicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoEstaticaActivity"
+            android:name=".activities.ResumoEstaticaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoGravitacaoActivity"
+            android:name=".activities.ResumoGravitacaoActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoHidrodinamicaActivity"
+            android:name=".activities.ResumoHidrodinamicaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoHidrostaticaActivity"
+            android:name=".activities.ResumoHidrostaticaActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoMHSActivity"
+            android:name=".activities.ResumoMHSActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.ResumoSIActivity"
+            android:name=".activities.ResumoSIActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.QuizEscolheTemaAssuntoActivity"
+            android:name=".activities.QuizEscolheTemaAssuntoActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activites.QuizResultadoActivity"
+            android:name=".activities.QuizResultadoActivity"
             android:theme="@style/Theme.Transparent"
-            android:parentActivityName=".activites.QuizActivity" >
+            android:parentActivityName=".activities.QuizActivity" >
         </activity>
     </application>
 </manifest>
