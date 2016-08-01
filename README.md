@@ -1,5 +1,10 @@
 # Física in Mãos
 
+## Breve descrição
+
+Aplicativo desenvolvido para servir como auxílio ao ensino de Física.
+
+## Descrição completa
 Aplicativo desenvolvido para servir como auxílio ao ensino de Física, mais precisamente o conteúdo de mecânica. Sendo composto de resumos, biografias, simulações, conversor de unidades e um quiz de perguntas.
 
 O Física in Mãos é um aplicativo para o sistema operacional Android, com versões iguais ou superiores a 4.1. Foi desenvolvido como Objeto Educacional do Mestrado Nacional Profissional em Ensino de Física da Sociedade Brasileira de Física (MNPEF/SBF) e tem como principal proposta auxiliar o ensino de física e realizar um feedback entre as novas tecnologias e a sala de aula.
