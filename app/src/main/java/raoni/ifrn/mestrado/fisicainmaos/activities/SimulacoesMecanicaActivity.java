@@ -9,20 +9,18 @@ import android.widget.TabHost;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class SimulacoesMecanicaActivity extends TabActivity
-{
+public class SimulacoesMecanicaActivity extends TabActivity {
     private Bundle bundleTelaSimulacoesMecanica;
     private Intent intentTelaSimulacoesMecanica;
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_simulacoes_mecanica);
 
-        final TabHost tabHost = (TabHost)findViewById(android.R.id.tabhost);
+        final TabHost tabHost = (TabHost) findViewById(android.R.id.tabhost);
         TabHost.TabSpec spec;
 
         intentTelaSimulacoesMecanica = new Intent().setClass(getApplicationContext(), SimulacaoMecanica1Activity.class);

@@ -9,15 +9,13 @@ import android.webkit.WebView;
 
 import raoni.ifrn.mestrado.fisicainmaos.R;
 
-public class SimulacaoMecanica2Activity extends Activity
-{
+public class SimulacaoMecanica2Activity extends Activity {
     WebView wvTelaSimulacaoMecanica;
     private String simulacao;
     private Bundle bundleTelaSimulacaoMecanica;
     int chave;
 
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
@@ -25,8 +23,7 @@ public class SimulacaoMecanica2Activity extends Activity
 
         bundleTelaSimulacaoMecanica = getIntent().getExtras();
 
-        if (bundleTelaSimulacaoMecanica != null)
-        {
+        if (bundleTelaSimulacaoMecanica != null) {
             chave = bundleTelaSimulacaoMecanica.getInt("chave");
         }
 
@@ -35,7 +32,7 @@ public class SimulacaoMecanica2Activity extends Activity
         wvTelaSimulacaoMecanica = (WebView) findViewById(R.id.wv_tela_simulacao_mecanica2);
         wvTelaSimulacaoMecanica.loadUrl(simulacao);
 
-        WebSettings settings = wvTelaSimulacaoMecanica .getSettings();
+        WebSettings settings = wvTelaSimulacaoMecanica.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDatabaseEnabled(true);
     }
